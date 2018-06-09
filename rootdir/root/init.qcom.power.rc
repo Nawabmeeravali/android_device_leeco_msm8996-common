@@ -110,7 +110,7 @@ on enable-low-power
     write /sys/devices/soc/${ro.boot.bootdevice}/${ro.boot.bootdevice}:ufs_variant/pm_qos_enable 1
 
 
-    setprop sys.io.scheduler "bfq"
+    setprop sys.io.scheduler "maple"
 
     # VM
     write /proc/sys/vm/dirty_background_ratio 20
